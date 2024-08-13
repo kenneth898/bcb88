@@ -3,28 +3,10 @@
 		<div class="col-12 ">
 			<div class="row ">
 				<div class="bg_img">
-					<!--owl carousel-->
-					<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-
-
-						<div class="carousel-inner">
-							<div class="carousel-item active" data-bs-interval="2000">
-								<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-									<img width="100%" src="/image/banner1.webp" class="d-block w-100" alt="banner1">
-								</a>
-							</div>
-							<div class="carousel-item" data-bs-interval="2000">
-								<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
-									<img width="100%" src="/image/banner2.webp" class="d-block w-100" alt="banner2">
-								</a>
-							</div>
-							<ol class="carousel-indicators">
-								<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0"
-									class="active single-dot"></li>
-								<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" class="single-dot">
-								</li>
-							</ol>
-						</div>
+					<div class="desktop">
+						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<img style="border-radius: 15px;" width="100%"
+								src="/public/image/Daily_unlimited_bonus_D.webp" alt="Daily_unlimited_bonus_D"> </a>
 					</div>
 					<div class="bonus">
 						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
@@ -67,7 +49,7 @@
 					<div class="srceen_mobile">
 
 						<!--button bg-->
-						<div class="btn_bg">
+						<div style="padding-top: 10px;" class="btn_bg">
 							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
 								<img width="100%" src="/image/btn_bg.webp" alt="btn_bg">
 							</a>
@@ -97,7 +79,32 @@
 							</div>
 						</div>
 					</div>
-
+					<!--owl carousel-->
+					<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+						<div ref="carousel" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+							@mousedown="startDrag" @mouseleave="endDrag" @mouseup="endDrag" @mousemove="onDrag">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="2000">
+									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+										<img width="100%" src="/image/banner1.webp" class="d-block w-100"
+											alt="banner1" />
+									</a>
+								</div>
+								<div class="carousel-item" data-bs-interval="2000">
+									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+										<img width="100%" src="/image/banner2.webp" class="d-block w-100"
+											alt="banner2" />
+									</a>
+								</div>
+								<ol class="carousel-indicators">
+									<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0"
+										class="active single-dot"></li>
+									<li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+										class="single-dot"></li>
+								</ol>
+							</div>
+						</div>
+					</div>
 					<!--sport live-->
 					<div class="col-12 bg_test">
 						<div class="row right2">
@@ -144,12 +151,32 @@ export default {
 	data() {
 		return {
 			tableData: this.generateInitialData(),
+			isDragging: false,
+			startX: 0,
+			scrollLeft: 0
 		};
 	},
 	mounted() {
 		this.startUpdatingData();
 	},
 	methods: {
+		startDrag(e) {
+			this.isDragging = true;
+			this.startX = e.pageX - this.$refs.carousel.offsetLeft;
+			this.scrollLeft = this.$refs.carousel.scrollLeft;
+			this.$refs.carousel.style.cursor = 'grabbing';
+		},
+		endDrag() {
+			this.isDragging = false;
+			this.$refs.carousel.style.cursor = 'grab';
+		},
+		onDrag(e) {
+			if (!this.isDragging) return;
+			e.preventDefault();
+			const x = e.pageX - this.$refs.carousel.offsetLeft;
+			const walk = (x - this.startX) * 2; // Adjust scroll speed
+			this.$refs.carousel.scrollLeft = this.scrollLeft - walk;
+		},
 		generateInitialData() {
 			return Array.from({ length: 5 }, () => this.createRandomEntry());
 		},
@@ -179,20 +206,14 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width:770px) {
-
-	.carousel {
-		padding-top: 0px !important;
-	}
-
-	.bg_img {
-		padding: 0px !important;
-
-	}
-}
-
 .bg_img {
 	padding-bottom: 100px;
+}
+
+@media screen and (max-width:768px) {
+	.bg_img {
+		padding-bottom: 0px;
+	}
 }
 
 .carousel {
@@ -232,13 +253,9 @@ export default {
 		display: block;
 	}
 
-	.srceen_mobile {
-		padding: 10px;
-	}
 
-	.bonus {
-		padding: 10px;
-	}
+
+
 
 	.table {
 		padding-left: 10px;
@@ -246,9 +263,8 @@ export default {
 	}
 
 	.bg_test {
-		margin-right: 10px;
-		margin-left: 10px;
-		width: 93% !important;
+
+		width: 100% !important;
 	}
 }
 
@@ -440,6 +456,10 @@ a {
 @media screen and (max-width:768px) {
 	.bonus {
 		display: block;
+	}
+
+	.desktop {
+		display: none;
 	}
 }
 

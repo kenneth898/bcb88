@@ -4,12 +4,10 @@
 			<div class="row">
 				<div style="padding: 0px;" class="col-sm-12 col-md-4">
 					<!--left-->
-
-					<div class=" left">
+					<div class="left">
 						<div class="leftright_bg">
 							<Left />
 						</div>
-
 					</div>
 				</div>
 
@@ -24,19 +22,17 @@
 						</a>
 					</div>
 					<hr style="color: white;">
-					<component :is="currentComponent"></component>
 
-					<div style="padding-bottom: 100px;" class="content" :id="menuItems[activeIndex].componentId">
+					<!-- 将 id 放在外层 div 上 -->
+					<div :id="menuItems[0].componentId">
+						<component :is="currentComponent"></component>
+					</div>
+
+					<div style="padding-bottom: 100px;" class="content" :id="menuItems[1].componentId">
 						<Content />
 					</div>
 
-
 				</div>
-
-
-
-
-
 
 				<div style="padding: 0px;" class="col-sm-12 col-md-4 mobile_col">
 					<!--right-->
@@ -49,7 +45,6 @@
 
 			</div>
 		</div>
-
 	</div>
 </template>
 
@@ -58,7 +53,6 @@ import Left from '../components/Left.vue';
 import Right from '../components/Rightt.vue';
 import Menu1 from '../components/contenttt.vue';
 import Content from '@/components/Menuu.vue';
-
 
 export default {
 	name: 'Home',
@@ -73,12 +67,10 @@ export default {
 			activeIndex: 0,
 			menuItems: [
 				{ name: 'Menu 1', activeSrc: '/image_main/spribe.gif', inactiveSrc: '/image_main/spribe.gif', component: 'Menu1', componentId: 'menu1' },
-				{ name: 'Menu 2', activeSrc: '/image_main/slotgame.gif', inactiveSrc: '/image_main/slotgame.gif', component: 'Menu1', componentId: 'menu1' },
-				{ name: 'Menu 3', activeSrc: '/image_main/minigame.webp', inactiveSrc: '/image_main/minigame.webp', component: 'Menu1', componentId: 'menu1' },
-
-				{ name: 'Menu 4', activeSrc: '/image_main/livecasino.webp', inactiveSrc: '/image_main/livecasino.webp', component: 'Menu1', componentId: 'menu1' },
-				{ name: 'Menu 5', activeSrc: '/image_main/sportbook.webp', inactiveSrc: '/image_main/sportbook.webp', component: 'Menu1', componentId: 'menu1' },
-
+				{ name: 'Menu 2', activeSrc: '/image_main/slotgame.gif', inactiveSrc: '/image_main/slotgame.gif', component: 'Menu1', componentId: 'content' },
+				{ name: 'Menu 3', activeSrc: '/image_main/minigame.webp', inactiveSrc: '/image_main/minigame.webp', component: 'Menu1', componentId: 'content' },
+				{ name: 'Menu 4', activeSrc: '/image_main/livecasino.webp', inactiveSrc: '/image_main/livecasino.webp', component: 'Menu1', componentId: 'content' },
+				{ name: 'Menu 5', activeSrc: '/image_main/sportbook.webp', inactiveSrc: '/image_main/sportbook.webp', component: 'Menu1', componentId: 'content' },
 			],
 		};
 	},
@@ -90,7 +82,11 @@ export default {
 	methods: {
 		setActive(index, componentId) {
 			this.activeIndex = index;
-			this.scrollTo(componentId);
+			if (index === 0) {
+				this.scrollTo(componentId);
+			} else {
+				this.scrollTo('content');
+			}
 		},
 		scrollTo(id) {
 			const element = document.getElementById(id);
@@ -234,6 +230,8 @@ export default {
 	.mobile_col2 {
 		order: 3;
 	}
+
+
 }
 
 .content {
@@ -293,6 +291,10 @@ h3 {
 		/* 每个菜单项占用相等的空间 */
 		width: 20%;
 		/* 可根据需要调整宽度 */
+	}
+
+	.center_col {
+		padding-top: 20px !important;
 	}
 }
 
