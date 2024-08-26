@@ -1,7 +1,7 @@
 <template>
 	<div style="padding-top: 10px;" class="main-col container">
 		<div v-for="(image, index) in images" :key="index" class="col">
-			<a :href="`https://www.ataskasino.com/en/sign-up/`" rel="nofollow">
+			<a :href="`https://www.ataskasino1.com/en/sign-up/`" rel="nofollow">
 				<img :src="`/game_img/${image.fileName}.webp`" :alt="image.fileName" class="img-fluid">
 				<p style="margin-bottom: 10px;">{{ $t('menu.play') }}</p>
 			</a>

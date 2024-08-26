@@ -4,12 +4,12 @@
 			<div class="row ">
 				<div class="bg_img">
 					<div class="desktop">
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 							<img style="border-radius: 15px;" width="100%"
 								src="/public/image/Daily_unlimited_bonus_D.webp" alt="Daily_unlimited_bonus_D"> </a>
 					</div>
 					<div class="bonus">
-						<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+						<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 							<img style="border-radius:10px ;" width="100%" src="/image/bonus388.webp" alt="bonus388">
 						</a>
 					</div>
@@ -50,28 +50,28 @@
 
 						<!--button bg-->
 						<div style="padding-top: 10px;" class="btn_bg">
-							<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+							<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 								<img width="100%" src="/image/btn_bg.webp" alt="btn_bg">
 							</a>
 
 							<div style="position: absolute; bottom: 0px;" class="row">
 								<div class="col-6 btn_left">
-									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+									<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 										<img width="95%" src="/image/btn_share.webp" alt="share">
 									</a>
 								</div>
 								<div class="col-6 btn_right">
-									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+									<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 										<img width="95%" src="/image/btn_downline.webp" alt="downline">
 									</a>
 								</div>
 								<div style="padding-top: 5px; padding-right: 3px;" class="col-6 btn_left">
-									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+									<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 										<img width="94%" src="/image/btn_copy.webp" alt="copy">
 									</a>
 								</div>
 								<div style="padding-top: 5px; " class="col-6 btn_right">
-									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+									<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 										<img width="94%" src="/image/btn_more.webp" alt="more">
 									</a>
 								</div>
@@ -85,13 +85,13 @@
 							@mousedown="startDrag" @mouseleave="endDrag" @mouseup="endDrag" @mousemove="onDrag">
 							<div class="carousel-inner">
 								<div class="carousel-item active" data-bs-interval="2000">
-									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+									<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 										<img width="100%" src="/image/banner1.webp" class="d-block w-100"
 											alt="banner1" />
 									</a>
 								</div>
 								<div class="carousel-item" data-bs-interval="2000">
-									<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+									<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 										<img width="100%" src="/image/banner2.webp" class="d-block w-100"
 											alt="banner2" />
 									</a>
@@ -119,7 +119,7 @@
 								<p>{{ $t('right.starttime') }}</p>
 								<p>17 Aug 2024</p>
 								<p class="sportlive_text text_sportlive">03:00</p>
-								<a class="betnow" href="https://www.ataskasino.com/login/" rel="nofollow">{{
+								<a class="betnow" href="https://www.ataskasino1.com/login/" rel="nofollow">{{
 									$t('right.betnow') }}</a>
 							</div>
 							<div class="col-3 text_sportlive">
@@ -131,7 +131,7 @@
 						</div>
 
 						<div class="showmore_col">
-							<a href="https://www.ataskasino.com/en/sport-live/" rel="nofollow">
+							<a href="https://www.ataskasino1.com/en/sport-live/" rel="nofollow">
 								<p class="showmore">{{ $t('right.showmore') }}</p>
 							</a>
 						</div>

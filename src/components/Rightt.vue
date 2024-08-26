@@ -2,12 +2,12 @@
 	<div style="height: 100%;" class="container-fluid">
 		<div style="padding:10px ;" class="row ">
 			<div class="col-6">
-				<a href="https://www.ataskasino.com/login/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/login/" rel="nofollow">
 					<img width="100%" src="/image/login.gif" alt="login">
 				</a>
 			</div>
 			<div class="col-6">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img width="100%" src="/image/register.gif" alt="register">
 				</a>
 			</div>
@@ -22,13 +22,13 @@
 				<p style="color: #C0C0C0;"><b>RM50.00</b></p>
 			</div>
 			<div style="padding-top:10px ;" class="col-6">
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img style="padding-bottom: 5px;" width="100%" src="/image/deposit.gif" alt="deposit">
 				</a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img style="padding-bottom: 5px;" width="100%" src="/image/withdraw.gif" alt="withdraw">
 				</a>
-				<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+				<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 					<img style="padding-bottom: 5px;" width="100%" src="/image/refresh.gif" alt="refresh">
 				</a>
 			</div>
@@ -40,7 +40,7 @@
 		<p style="color: #FFD700;"><b>BCB88 SUPER BONUS <span class="free-hot">[FREE]</span></b></p>
 
 		<div class="bonus">
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<div class="btn-free">
 					<img width="80%" src="/public/image/bcb_btn.gif" alt="bcb_button">
 					<div class="btn-content">
@@ -51,7 +51,7 @@
 				</div>
 			</a>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<div class="btn-shadow">
 					<img width="80%" src="/public/image/bcb_btn.gif" alt="bcb_button">
 					<div class="shadow-btn">
@@ -69,7 +69,7 @@
 		<div class="bonus">
 
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<div class="btn-shadow">
 					<img width="80%" src="/public/image/bcb_btn.gif" alt="bcb_button">
 					<div class="shadow-btn">
@@ -80,7 +80,7 @@
 				</div>
 			</a>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<div class="btn-shadow">
 					<img width="80%" src="/public/image/bcb_btn.gif" alt="bcb_button">
 					<div class="shadow-btn">
@@ -91,7 +91,7 @@
 				</div>
 			</a>
 
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<div class="btn-shadow">
 					<img width="80%" src="/image/bcb_btn.gif" alt="bcb_button">
 					<div class="shadow-btn">
@@ -104,14 +104,14 @@
 		</div>
 
 		<div class="desktop">
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<img style="border-radius: 10px;" width="100%" src="/image/free-credit-RM50_D.webp"
 					alt="Download-APK-free-credit-RM50-D">
 			</a>
 		</div>
 
 		<div class="mobile">
-			<a href="https://www.ataskasino.com/en/sign-up/" rel="nofollow">
+			<a href="https://www.ataskasino1.com/en/sign-up/" rel="nofollow">
 				<img style="border-radius: 10px;" width="100%" src="/image/Download-APK-free-credit-RM50-M.webp"
 					alt="Download-APK-free-credit-RM50-M">
 			</a>

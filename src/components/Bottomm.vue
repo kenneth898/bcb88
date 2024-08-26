@@ -10,25 +10,25 @@
 					<div class="menu d-flex justify-content-around w-100">
 
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" alt="Home" href="https://www.ataskasino.com/"
+							<a class="nav-link" rel="nofollow" alt="Home" href="https://www.ataskasino1.com/"
 								target="_blank">
 								<img class="nav-icon img1" src="/image/btn_home.webp" alt="Home"></a>
 						</div>
 
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" href="https://www.ataskasino.com/en/sign-up/"
+							<a class="nav-link" rel="nofollow" href="https://www.ataskasino1.com/en/sign-up/"
 								target="_blank">
 								<img class="nav-icon img2" src="/image/btn_history.webp" alt="History"></a>
 						</div>
 
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" alt="bonus" href="https://www.ataskasino.com/en/sign-up/"
-								target="_blank">
+							<a class="nav-link" rel="nofollow" alt="bonus"
+								href="https://www.ataskasino1.com/en/sign-up/" target="_blank">
 								<img class="nav-icon img3" src="/image/btn_livechat.webp" alt="Promo"></a>
 						</div>
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
 							<a class="nav-link" rel="nofollow" alt="history"
-								href="https://www.ataskasino.com/en/sign-up/" target="_blank">
+								href="https://www.ataskasino1.com/en/sign-up/" target="_blank">
 								<img class="nav-icon img4" src="/image/btn_setting.webp" alt="Live Chat"></a>
 						</div>
 					</div>
