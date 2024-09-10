@@ -10,25 +10,22 @@
 					<div class="menu d-flex justify-content-around w-100">
 
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" alt="Home" href="https://www.ataskasino1.com/"
-								target="_blank">
+							<a :href="link" class="nav-link" rel="nofollow" alt="Home" target="_blank">
 								<img class="nav-icon img1" src="/image/btn_home.webp" alt="Home"></a>
 						</div>
 
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" href="https://www.ataskasino1.com/en/sign-up/"
-								target="_blank">
+							<a :href="link + 'en/sign-up'" class="nav-link" rel="nofollow" target="_blank">
 								<img class="nav-icon img2" src="/image/btn_history.webp" alt="History"></a>
 						</div>
 
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" alt="bonus"
-								href="https://www.ataskasino1.com/en/sign-up/" target="_blank">
+							<a :href="link + 'en/sign-up'" class="nav-link" rel="nofollow" alt="bonus" target="_blank">
 								<img class="nav-icon img3" src="/image/btn_livechat.webp" alt="Promo"></a>
 						</div>
 						<div class="nav-item d-flex flex-column align-items-center text-center column-height">
-							<a class="nav-link" rel="nofollow" alt="history"
-								href="https://www.ataskasino1.com/en/sign-up/" target="_blank">
+							<a :href="link + 'en/sign-up'" class="nav-link" rel="nofollow" alt="history"
+								target="_blank">
 								<img class="nav-icon img4" src="/image/btn_setting.webp" alt="Live Chat"></a>
 						</div>
 					</div>
@@ -40,8 +37,33 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
 	name: 'bottom',
+	data() {
+		return {
+			link: ""
+		}
+	},
+	methods: {
+		async calllink() {
+			try {
+				const response = await axios.get('https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com', {
+					headers: {
+						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021",
+					}
+				});
+				this.link = response.data.data.attributes.ataskasino_com;
+
+				console.log(this.link);
+			} catch (error) {
+				console.error(error);
+			}
+		},
+	},
+	mounted() {
+		this.calllink();
+	}
 };
 </script>
 
