@@ -116,8 +116,8 @@
 								<p>{{ $t('right.manutd') }}</p>
 							</div>
 							<div class="col-6 text_sportlive">
-								<p>{{ $t('right.starttime') }}</p>
-								<p>17 Aug 2024</p>
+								<p style="color: black;">{{ $t('right.starttime') }}</p>
+								<p style="color: black;">17 Aug 2024</p>
 								<p class="sportlive_text text_sportlive">03:00</p>
 								<a :href="link + 'login'" class="betnow" rel="nofollow">{{
 									$t('right.betnow') }}</a>
@@ -146,7 +146,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import { mapGetters } from 'vuex';
 export default {
 	name: 'Left',
 	data() {
@@ -155,28 +155,17 @@ export default {
 			isDragging: false,
 			startX: 0,
 			scrollLeft: 0,
-			link: ""
+
 		};
+	},
+	computed: {
+		...mapGetters(['link'])
 	},
 	mounted() {
 		this.startUpdatingData();
-		this.calllink();
+		this.$store.dispatch('fetchLink');
 	},
 	methods: {
-		async calllink() {
-			try {
-				const response = await axios.get('https://seo.mobileapplab.online/api/atas?fields[0]=ataskasino_com', {
-					headers: {
-						"Authorization": "Bearer " + "1c4db3188ab2e9a077928920d9cc8d3322d15f9751bc2054a5cb70008df79cf3e3a4dd005a75a1f2db40eb953292ee10ef699693e96e9d77a98439f438ee6a6e6805a8a955e992f082b9e6118a4345e1ed18438ff9789edf9ed1dd58af45ee6669a7519a1291746959ff45bc2054b7f408b5da5ea8cd04d588a2704b7e218021",
-					}
-				});
-				this.link = response.data.data.attributes.ataskasino_com;
-
-				console.log(this.link);
-			} catch (error) {
-				console.error(error);
-			}
-		},
 		startDrag(e) {
 			this.isDragging = true;
 			this.startX = e.pageX - this.$refs.carousel.offsetLeft;
