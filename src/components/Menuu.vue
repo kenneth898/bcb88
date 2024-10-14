@@ -161,11 +161,19 @@
 		| {{ $t('Footer.2') }}
 	</p>
 
-	<p style="padding-bottom: 80px; color: #fff;">
+	<p style=" color: #fff;">
 		<a a :href="link2" style="font-weight: 900;color:#FFD700; ">{{ $t('Footer.3')
 			}}</a>
 		| {{ $t('Footer.4') }}
 	</p>
+	<p style="padding-bottom: 80px;color: #fff;">
+		{{ $t('Footer.5') }}
+		<a a :href="link" style="font-weight: 900;color:#FFD700; ">
+			{{ $t('Footer.6') }}
+		</a>
+		{{ $t('Footer.7') }}
+	</p>
+
 
 </template>
 <script>
