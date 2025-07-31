@@ -4,7 +4,7 @@
 			<div class="top_bg">
 				<div class="container-fluid">
 					<div class="end d-flex justify-content-between align-items-center">
-						<a href="https://www.bcb88.info/" rel="nofollow">
+						<a href="/" rel="nofollow">
 							<img class="logo" src="/public/image/logo.webp" alt="bcb88">
 						</a>
 						<!-- <a style="text-align: end;" href="#" rel="nofollow">
