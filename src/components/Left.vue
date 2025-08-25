@@ -117,7 +117,8 @@
 							</div>
 							<div class="col-6 text_sportlive">
 								<p style="color: black;">{{ $t('right.starttime') }}</p>
-								<p style="color: black;">17 Aug 2024</p>
+								<p style="color: black;">{{ $t('right.date_info', { year: new Date().getFullYear() }) }}
+								</p>
 								<p class="sportlive_text text_sportlive">03:00</p>
 								<a :href="link + 'login'" class="betnow" rel="nofollow">{{
 									$t('right.betnow') }}</a>
